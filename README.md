@@ -18,7 +18,7 @@
 
 You can:
 - 🔗 **Download the trained model** from Hugging Face:
-  (not uploaded yet)
+  [https://huggingface.co/mehta/CooperLM-354M](https://huggingface.co/mehta/CooperLM-354M)
 - 🛠️ **Train it yourself** using the included notebooks (Requires CUDA Enabled GPU)
 
 > Note: Due to file size constraints, large datasets and model checkpoints are not included in this repo. You’ll need to reprocess data and train locally or modify the training script.
