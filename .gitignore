@@ -1,3 +1,5 @@
 raw_data/combined_text.txt
 raw_data/cleaned_combined.txt
 *.arrow
+/cooper_model_checkpoints
+CooperLM-354M/model.safetensors
