@@ -57,8 +57,8 @@ CooperLM/
 ```python
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 
-model = GPT2LMHeadModel.from_pretrained("daniel-mehta/CooperLM-354M")
-tokenizer = GPT2TokenizerFast.from_pretrained("daniel-mehta/CooperLM-354M")
+model = GPT2LMHeadModel.from_pretrained("mehta/CooperLM-354M")
+tokenizer = GPT2TokenizerFast.from_pretrained("mehta/CooperLM-354M")
 
 prompt = "In a distant future,"
 input_ids = tokenizer(prompt, return_tensors="pt").input_ids
