@@ -36,6 +36,9 @@ CooperLM/
 ├── train_model.ipynb             # Train GPT-2 model using Hugging Face Trainer
 ├── eval_and_generate.ipynb       # Perplexity eval + prompt-based text generation
 │
+├── streamlit_app/                # Streamlit UI for interactive prompt generation
+│   └── app.py
+│
 ├── raw_data/                     # Cleaned raw text data
 │   └── cleaned_data.txt
 │
@@ -97,17 +100,27 @@ This is a toy model for learning and experimentation. Outputs may be inaccurate 
 
 ---
 
+## 🌐 Streamlit Demo
+
+A lightweight Streamlit app is included to run text generation in-browser using CooperLM-354M.
+
+Run locally:
+
+```bash
+cd streamlit_app
+streamlit run app.py
+```
+It auto-detects whether to use CPU or GPU and lets you toggle the device via sidebar.
+
+![Streamlit Demo](https://github.com/user-attachments/assets/9a229eef-8531-4dd8-8ccb-743bbd59bf9e)
+
+---
+
 ## 🚀 What I Learned
 
 - How to build and train a GPT-style transformer from scratch
 - Practical experience with tokenizer prep, entropy filtering, and data chunking
 - Fine-tuning loops and managing memory on a consumer GPU
-
----
-## 🔭 Next Steps
-
-- Enable training or inference on CPU
-- Add a Streamlit or Gradio demo
 
 ---
 
