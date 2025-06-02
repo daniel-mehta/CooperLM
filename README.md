@@ -1,6 +1,8 @@
 # 🧠 CooperLM-354M
 
-**CooperLM** is a 354M parameter GPT-2 based language model trained on a curated subset of English Wikipedia, BookCorpus, and OpenWebText. It was built as a toy project to explore LLM training end-to-end using Hugging Face's Transformers and Datasets libraries.
+**CooperLM** is a 354M-parameter language model based on the GPT-2 architecture, trained from scratch on a curated subset of English Wikipedia, BookCorpus, and OpenWebText. It was built as a toy project to explore end-to-end LLM training using Hugging Face’s Transformers and Datasets libraries. 
+
+*In memory of Cooper - my puppy and companion for 14 years.*
 
 ---
 
@@ -10,7 +12,7 @@
 - 🧱 **Architecture**: GPT-2 (24 layers, 16 heads, 1024 hidden size, 256 context length)
 - 📚 **Training Data**: 100k samples from cleaned, filtered English text (~688MB)
 - ⚙️ **Trained With**: Hugging Face `Trainer`, `fp16`, batch size 16 (gradient accumulation)
-- 🧪 **Perplexity**: ~263 on a 1,000-sample evaluation set
+- 🧪 **Perplexity**: ~263 on a 1,000-sample evaluation set (expectedly high due to limited hardware)
 
 ---
 
@@ -69,7 +71,7 @@ print(tokenizer.decode(output[0], skip_special_tokens=True))
 
 ---
 
-## 🧪 Sample Output
+## 🧪 Example Output (reflects limitations of small dataset and short training):
 Prompt: `The country Malta is`
 
 Generated:
@@ -110,4 +112,5 @@ This is a toy model for learning and experimentation. Outputs may be inaccurate 
 ---
 
 ## 📝License
-MIT
+This project is licensed under the MIT License. Feel free to use or build on it for your own experiments.
+
