@@ -1,0 +1,9 @@
+torch
+transformers
+datasets
+streamlit
+tqdm
+langdetect
+huggingface_hub
+notebook
+ipykernel
