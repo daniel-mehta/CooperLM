@@ -4,3 +4,4 @@ raw_data/cleaned_combined.txt
 /cooper_model_checkpoints
 CooperLM-354M/model.safetensors
 upload_to_huggingface.ipynb
+CooperLM-354M-quantized/model.safetensors
